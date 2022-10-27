@@ -1,0 +1,17 @@
+{
+  "svelte-js": {
+    "offline_url": "/Users/antonio/Documents/Playground/svelte-js",
+    "online_url": "https://antonio-leitao.github.io/template-svelte-js",
+    "type": "Web"
+  },
+  "c++": {
+    "offline_url": "/Users/antonio/Documents/Playground/svelte-js",
+    "online_url": "https://antonio-leitao.github.io/template-svelte-js",
+    "type": "C++"
+  },
+  "python": {
+    "offline_url": "/Users/antonio/Documents/Playground/svelte-js",
+    "online_url": "https://antonio-leitao.github.io/template-svelte-js",
+    "type": "Python"
+  }
+}
