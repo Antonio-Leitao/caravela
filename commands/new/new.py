@@ -142,7 +142,10 @@ def colapsePlaceholders(project_dir: str, info: dict, files: list) -> None:
     # add a try with key error here
     def caravelaSub(match):
         if match.group(2) in info:
-            return info[match.group(2)]
+            if type(info[match.group(2)]) != str:
+                return str(info[match.group(2)])
+            else:
+                return str(info[match.group(2)])
         else:
             return f"Template ERROR: no key: {match.group(2)}"
 
@@ -291,7 +294,6 @@ def main():
 
     ######### RUN MAKE INIT #########
     subprocess.Popen(["make", "init"], stdout=subprocess.PIPE, cwd=project_dir)
-    print(info)
 
 
 if __name__ == "__main__":
